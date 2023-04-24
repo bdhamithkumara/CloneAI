@@ -140,6 +140,9 @@ const Demo = () => {
               )
             )}
           </div>
+          <div className='mb-5'>
+          <p className='text-[15px] text-[#000] relative flex justify-center items-center font-bold '>Made By Dhamith Kumara with ❤️</p>
+          </div>
         </section>
   )
 }
