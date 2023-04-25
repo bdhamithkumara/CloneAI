@@ -1,6 +1,7 @@
 import  {useEffect , useState} from 'react'
 import { copy , linkIcon , loader , tick } from '../assets'
 import { useLazyGetSummaryQuery } from '../services/article';
+import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 
 const Demo = () => {
     
@@ -140,9 +141,36 @@ const Demo = () => {
               )
             )}
           </div>
-          <div className='mb-5'>
+          <div className=''>
           <p className='text-[15px] text-[#000] relative flex justify-center items-center font-bold '>Made By Dhamith Kumara with ❤️</p>
           </div>
+          <div className='relative flex justify-center items-center'>
+          <MDBBtn className='m-1' style={{ backgroundColor: '#3b5998' }} href='https://www.facebook.com/bdhamithkumara'>
+        <MDBIcon fab icon='facebook-f' />
+      </MDBBtn>
+
+      <MDBBtn className='m-1' style={{ backgroundColor: '#55acee' }} href='https://twitter.com/bdhamithkumara'>
+        <MDBIcon fab icon='twitter' />
+      </MDBBtn>
+
+      <MDBBtn className='m-1' style={{ backgroundColor: '#0082ca' }} href='https://www.linkedin.com/in/bdhamithkumara/'>
+        <MDBIcon fab icon='linkedin-in' />
+      </MDBBtn>
+
+      <MDBBtn className='m-1' style={{ backgroundColor: '#ffac44' }} href='https://stackoverflow.com/users/9677873/dhamith-kumara'>
+        <MDBIcon fab icon='stack-overflow' />
+      </MDBBtn>
+
+      <MDBBtn className='m-1' style={{ backgroundColor: '#333333' }} href='https://github.com/bdhamithkumara'>
+        <MDBIcon fab icon='github' />
+      </MDBBtn>
+
+      <MDBBtn className='m-1' style={{ backgroundColor: '#25d366' }} href='https://wa.me/94756049015'>
+        <MDBIcon fab icon='whatsapp' />
+      </MDBBtn>
+
+          </div>
+      
         </section>
   )
 }
